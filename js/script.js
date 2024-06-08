@@ -260,3 +260,27 @@ function updateDateTime() {
 setInterval(updateDateTime, 60000);
 // Initial call to display immediately on load
 updateDateTime();
+
+
+
+
+
+
+document.addEventListener('keydown', function(event) {
+    // Disable F12
+    if (event.keyCode == 123) {
+        event.preventDefault();
+    }
+    // Disable Ctrl+Shift+I
+    if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+        event.preventDefault();
+    }
+    // Disable Ctrl+Shift+J
+    if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+        event.preventDefault();
+    }
+    // Disable Ctrl+U
+    if (event.ctrlKey && event.keyCode == 85) {
+        event.preventDefault();
+    }
+});

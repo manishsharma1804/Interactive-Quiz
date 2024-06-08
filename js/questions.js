@@ -310,7 +310,6 @@ const questions = [
     },
     {
         question: "Capital Of Jharkhand",
-        imgSrc: "images/4.jpeg",
         answer: "Ranchi",
         options: [
             "Ranchi",
@@ -321,7 +320,6 @@ const questions = [
     },
     {
         question: "Who is the Prime Minister of India?",
-        imgSrc: "images/4.jpeg",
         answer: "Shree Narendra Modi",
         options: [
             "Shree Narendra Modi",
