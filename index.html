@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Quiz App | CodingNepal</title>
+    <title>Interactive Quiz | MANISH SHARMA</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAweome CDN Link for Icons-->
+    <!-- FontAwesome CDN Link for Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    
+    <header class="top-nav">
+        <div class="title"><h2>Interactive Quiz</h2></div>
+        <div class="datetime">
+            <div id="date" class="date"></div>
+            <div id="time" class="time"></div>
+        </div>
+    </header>
     <!-- start Quiz button -->
     <div class="start_btn"><button>Start Quiz</button></div>
 
     <!-- Info Box -->
     <div class="info_box">
-        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-title"><span>Rules of this Quiz</span></div>
         <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">1. You will have only <span>15 seconds</span> for each question.</div>
             <div class="info">2. Once you select your answer, it can't be undone.</div>
             <div class="info">3. You can't select any option once time goes off.</div>
             <div class="info">4. You can't exit from the Quiz while you're playing.</div>
@@ -32,22 +38,17 @@
     <!-- Quiz Box -->
     <div class="quiz_box">
         <header>
-            <div class="title">Awesome Quiz Application</div>
+            <div class="title"></div>
             <div class="timer">
                 <div class="time_left_txt">Time Left</div>
                 <div class="timer_sec">15</div>
             </div>
-            <div class="time_line"></div>
         </header>
         <section>
             <div class="que_text">
                 <!-- Here I've inserted question from JavaScript -->
             </div>
-            <div class="que_img">
-                <!-- Added for displaying question image -->
-            </div> 
-            <div class="option_list">            
-
+            <div class="option_list">
                 <!-- Here I've inserted options from JavaScript -->
             </div>
         </section>
@@ -74,6 +75,11 @@
             <button class="restart">Replay Quiz</button>
             <button class="quit">Quit Quiz</button>
         </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+            <p>Designed by <a href="https://www.instagram.com/me.manish18/" target="_blank">MANISH SHARMA</a> &copy; 2024</p>
     </div>
 
     <!-- Inside this JavaScript file I've inserted Questions and Options only -->
